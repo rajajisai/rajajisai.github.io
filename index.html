@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sai Rajaji Ramakrishnan | Distributed Systems Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Sai Rajaji Ramakrishnan, MS Computer Science student at Stony Brook University focused on distributed systems, databases, backend engineering, and new grad SWE roles in 2026."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <a class="brand" href="#top">SRR</a>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid" id="top">
+          <section class="hero-copy reveal">
+            <p class="eyebrow">Software Engineer • Distributed Systems • Databases</p>
+            <h1>Sai Rajaji Ramakrishnan</h1>
+            <p class="lede">
+              MS Computer Science student at Stony Brook University building
+              distributed systems, storage systems, and database infrastructure.
+            </p>
+            <p class="hero-detail">
+              Seeking full-time software engineering roles starting May or June
+              2026, with strongest interest in backend platforms, distributed
+              architecture, and data-intensive systems.
+            </p>
+            <div class="cta-row">
+              <a class="button button-primary" href="Sai_Rajaji_Resume_Sys.pdf" target="_blank" rel="noreferrer">View Resume</a>
+              <a class="button button-secondary" href="https://www.linkedin.com/in/sairajajir" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="button button-secondary" href="https://github.com/rajajisai" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </section>
+
+          <aside class="hero-card reveal">
+            <p class="card-label">Current Focus</p>
+            <ul class="focus-list">
+              <li>Consensus, replication, and fault tolerance</li>
+              <li>Database internals and transaction processing</li>
+              <li>Backend systems for high-scale products</li>
+            </ul>
+
+            <div class="stat-block">
+              <span class="stat-value">4</span>
+              <span class="stat-label">major systems projects across distributed systems, databases, and operating systems</span>
+            </div>
+
+            <div class="location-pill">Stony Brook, New York</div>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section class="panel reveal" id="about">
+          <div class="section-heading">
+            <p class="section-kicker">About</p>
+            <h2>Engineer with research and product experience</h2>
+          </div>
+          <div class="two-column">
+            <p>
+              I work across systems software and backend engineering, with recent
+              project work spanning distributed consensus, replicated state
+              machines, transaction processing, database execution engines, and
+              operating system fundamentals.
+            </p>
+            <p>
+              In industry, I have worked in research and product teams at IISc,
+              IBM, and Avaamo, shipping backend services, Kafka consumers,
+              knowledge graph pipelines, and NLP-backed application features.
+            </p>
+          </div>
+        </section>
+
+        <section class="panel reveal" id="projects">
+          <div class="section-heading">
+            <p class="section-kicker">Projects</p>
+            <h2>Systems work with measurable performance and reliability goals</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <p class="timeline-date">August 2024 - December 2024</p>
+              </div>
+              <div class="timeline-content">
+                <h3>Fault-Tolerant Banking System (PBFT)</h3>
+                <p class="timeline-company">Go, gRPC, PBFT, Concurrency, Consensus Algorithms</p>
+                <p>
+                  Built a distributed banking system in Go using Linear PBFT with
+                  view change across 3 replicated shards and 9 nodes, reducing
+                  consensus complexity from quadratic to linear while preserving
+                  strong consistency for 3K+ accounts.
+                </p>
+                <p>
+                  Implemented two-phase commit with two-phase locking and
+                  parallel transaction processing, reaching 1000+ TPS under a
+                  fault-injection test framework.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <p class="timeline-date">May 2025 - July 2025</p>
+              </div>
+              <div class="timeline-content">
+                <h3>Bustub</h3>
+                <p class="timeline-company">C++, Linux, Database Internals</p>
+                <p>
+                  Developed a buffer pool manager with LRU-K replacement,
+                  constant-time lookups, and index-backed scans, then built a
+                  Volcano-style SQL executor with rule-based optimizations.
+                </p>
+                <p>
+                  Integrated optimistic MVCC with snapshot isolation to improve
+                  high-concurrency, non-blocking transactional throughput.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <p class="timeline-date">September 2025 - October 2025</p>
+              </div>
+              <div class="timeline-content">
+                <h3>Replicated State Machine (Raft)</h3>
+                <p class="timeline-company">C++, Raft</p>
+                <p>
+                  Built a Raft-based replication layer handling leader election,
+                  heartbeats, log replication, and crash recovery to maintain
+                  strong consistency under failures.
+                </p>
+                <p>
+                  Implemented quorum-driven log commit and replica backtracking
+                  to keep replicas synchronized during network partitions and
+                  re-joins.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <p class="timeline-date">February 2026 - Present</p>
+              </div>
+              <div class="timeline-content">
+                <h3>SBUnix</h3>
+                <p class="timeline-company">C, Unix, Operating Systems</p>
+                <p>
+                  Built core OS subsystems from scratch on RISC-V, including
+                  virtual memory, paging, page faults, process management,
+                  context switching, and an interactive shell.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel reveal" id="experience">
+          <div class="section-heading">
+            <p class="section-kicker">Experience</p>
+            <h2>Work shaped by systems thinking</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <p class="timeline-date">May 2023 - April 2024</p>
+                <p class="timeline-location">Bengaluru, Karnataka, India</p>
+              </div>
+              <div class="timeline-content">
+                <h3>Research Assistant</h3>
+                <p class="timeline-company">Indian Institute of Science (IISc) • Python, PyTorch, Selenium, Neo4j, Docker</p>
+                <p>
+                  Curated a multiview knowledge graph by scraping IMDb and
+                  DuckDuckGo using Selenium, storing more than 30 GB of entities
+                  and relationships in Neo4j.
+                </p>
+                <p>
+                  Refactored graph entity alignment models in PyTorch
+                  Geometric, enabling GPU-accelerated message passing and
+                  batching for up to 10x faster training and inference.
+                </p>
+                <p>
+                  Containerized training and evaluation workflows with Docker,
+                  cutting environment setup and iteration overhead by 60%.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <p class="timeline-date">July 2022 - April 2023</p>
+                <p class="timeline-location">Bengaluru, Karnataka, India</p>
+              </div>
+              <div class="timeline-content">
+                <h3>Software Engineer</h3>
+                <p class="timeline-company">IBM India • Node.js, Kafka, IBM Cloud, Kubernetes, CI/CD</p>
+                <p>
+                  Developed backend services in Node.js for a connected-vehicle
+                  application supporting real-time metrics and remote control
+                  features for over 1 million active users.
+                </p>
+                <p>
+                  Implemented Kafka consumer services processing millions of
+                  vehicle events per day with fault-tolerant recovery.
+                </p>
+                <p>
+                  Optimized event processing and API workflows through batching
+                  and asynchronous execution, reducing latency by about 27% and
+                  lowering cloud compute costs by 8%.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <p class="timeline-date">January 2022 - June 2022</p>
+                <p class="timeline-location">Bengaluru, Karnataka, India</p>
+              </div>
+              <div class="timeline-content">
+                <h3>Software Intern</h3>
+                <p class="timeline-company">Avaamo.ai • Django, React, Transformers, NLP, MySQL</p>
+                <p>
+                  Developed a question-answering system for enterprise chatbots
+                  using Transformer-based NLP models to retrieve passages and
+                  extract answers from customer-provided documents.
+                </p>
+                <p>
+                  Diagnosed and fixed production issues across QnA inference
+                  services and backend APIs, reducing incident resolution time
+                  by 36% while maintaining 99.9%+ availability.
+                </p>
+                <p>
+                  Refactored backend infrastructure with 10+ Django APIs using
+                  reusable generic views and developed a React UI for a
+                  text-to-speech service.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="split-panel">
+          <section class="panel reveal" id="education">
+            <div class="section-heading">
+              <p class="section-kicker">Education</p>
+              <h2>Academic foundation in systems and computing</h2>
+            </div>
+
+            <div class="education-list">
+              <article class="education-item">
+                <h3>Stony Brook University</h3>
+                <p>Master of Science in Computer Science</p>
+                <p>Coursework: Distributed Systems, Storage Systems, Database Systems</p>
+                <span>August 2024 - May 2026</span>
+              </article>
+
+              <article class="education-item">
+                <h3>BITS Pilani</h3>
+                <p>BS in Computer Science, M.Sc in Mathematics</p>
+                <p>Coursework: Linear Algebra, Optimization, Machine Learning</p>
+                <span>August 2017 - August 2022</span>
+              </article>
+            </div>
+          </section>
+
+          <section class="panel reveal" id="skills">
+            <div class="section-heading">
+              <p class="section-kicker">Skills</p>
+              <h2>Tools and areas I work in</h2>
+            </div>
+
+            <div class="skill-cloud">
+              <span>C++</span>
+              <span>Go</span>
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Node.js</span>
+              <span>React</span>
+              <span>Django</span>
+              <span>MySQL</span>
+              <span>PyTorch</span>
+              <span>Transformers</span>
+              <span>Docker</span>
+              <span>Kubernetes</span>
+              <span>Kafka</span>
+              <span>Distributed Systems</span>
+              <span>Databases</span>
+              <span>Operating Systems</span>
+            </div>
+          </section>
+        </section>
+
+        <section class="panel contact-panel reveal" id="contact">
+          <div class="section-heading">
+            <p class="section-kicker">Contact</p>
+            <h2>Open to full-time software engineering roles in 2026</h2>
+          </div>
+
+          <div class="contact-grid">
+            <a href="mailto:sairajaji1999@gmail.com">sairajaji1999@gmail.com</a>
+            <a href="tel:+19342464227">+1 (934) 246-4227</a>
+            <a href="https://www.linkedin.com/in/sairajajir" target="_blank" rel="noreferrer">linkedin.com/in/sairajajir</a>
+            <a href="https://github.com/rajajisai" target="_blank" rel="noreferrer">github.com/rajajisai</a>
+            <a href="Sai_Rajaji_Resume_Sys.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
