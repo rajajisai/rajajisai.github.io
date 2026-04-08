@@ -1,18 +1,13 @@
 :root {
   --bg: #0a0d12;
-  --bg-soft: #10141c;
-  --surface: rgba(17, 21, 29, 0.9);
-  --surface-strong: #141923;
-  --surface-hover: #171d28;
+  --surface: rgba(14, 18, 26, 0.82);
   --text: #f1f5f9;
   --muted: #99a3b3;
   --line: rgba(148, 163, 184, 0.15);
   --accent: #7ae7c7;
-  --accent-soft: rgba(122, 231, 199, 0.14);
   --accent-strong: #8ef5d7;
   --tag-blue: rgba(104, 164, 255, 0.16);
   --tag-gold: rgba(246, 197, 92, 0.16);
-  --tag-purple: rgba(188, 140, 255, 0.16);
   --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
   --radius-lg: 26px;
   --radius-md: 18px;
@@ -65,7 +60,7 @@ strong {
 .project-card,
 .timeline-item {
   border: 1px solid var(--line);
-  background: rgba(14, 18, 26, 0.82);
+  background: var(--surface);
   box-shadow: var(--shadow);
   backdrop-filter: blur(8px);
 }
@@ -238,8 +233,7 @@ main {
   font-size: 1.45rem;
 }
 
-.tag-row,
-.skill-grid {
+.tag-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
@@ -257,7 +251,7 @@ main {
 }
 
 .stack-card:nth-child(2) .tag-row span:nth-child(odd) {
-  background: var(--accent-soft);
+  background: rgba(122, 231, 199, 0.14);
 }
 
 .stack-card:nth-child(3) .tag-row span:nth-child(odd) {
@@ -344,13 +338,13 @@ main {
   color: var(--accent);
 }
 
-.js-enabled .reveal {
+.reveal {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 600ms ease, transform 600ms ease;
 }
 
-.js-enabled .reveal.is-visible {
+.reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }

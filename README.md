@@ -1,28 +1,38 @@
 # Portfolio Website
 
-Static portfolio site for Sai Rajaji Ramakrishnan. The site is ready to deploy on GitHub Pages with no build step.
+React portfolio site for Sai Rajaji Ramakrishnan, built with Vite and ready for Vercel deployment.
 
-## Local preview
+## Local development
 
-Open `index.html` directly in a browser, or run:
+Install dependencies:
 
 ```bash
-python3 -m http.server 8000
+npm install
 ```
 
-Then visit `http://localhost:8000`.
+Run the dev server:
 
-## Deploy to GitHub Pages
+```bash
+npm run dev
+```
 
-1. Create a GitHub repository and push these files.
-2. In GitHub, open `Settings` -> `Pages`.
-3. Under `Build and deployment`, set `Source` to `Deploy from a branch`.
-4. Select the branch you pushed, choose `/ (root)`, and save.
-5. GitHub will publish the site at your Pages URL.
+Build for production:
 
-## Files
+```bash
+npm run build
+```
 
-- `index.html`: site markup
-- `styles.css`: visual design and responsive layout
-- `script.js`: scroll reveal animation
-- `Sai_Rajaji_Resume_Sys.pdf`: resume download
+## Deploy to Vercel
+
+1. Push this repository to GitHub.
+2. Import the repository into Vercel.
+3. Vercel should detect `Vite` automatically.
+4. Use the default build command `npm run build`.
+5. Use the default output directory `dist`.
+
+## Key files
+
+- `src/App.jsx`: page content and React component structure
+- `src/main.jsx`: React entrypoint
+- `styles.css`: global styling
+- `resume/Sai_Rajaji_Resume_Sys.pdf`: resume download asset
