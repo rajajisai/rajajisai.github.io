@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 const focusAreas = [
   {
     title: "Systems Programming",
@@ -84,42 +82,9 @@ const experience = [
 ];
 
 function App() {
-  useEffect(() => {
-    document.body.classList.add("js-enabled");
-
-    const revealItems = document.querySelectorAll(".reveal");
-
-    if (!("IntersectionObserver" in window)) {
-      revealItems.forEach((item) => item.classList.add("is-visible"));
-      return () => document.body.classList.remove("js-enabled");
-    }
-
-    const revealObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            revealObserver.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.16 }
-    );
-
-    revealItems.forEach((item, index) => {
-      item.style.transitionDelay = `${index * 80}ms`;
-      revealObserver.observe(item);
-    });
-
-    return () => {
-      revealObserver.disconnect();
-      document.body.classList.remove("js-enabled");
-    };
-  }, []);
-
   return (
     <div className="page-shell" id="top">
-      <nav className="topbar reveal">
+      <nav className="topbar">
         <a className="brand" href="#top">
           SRR
         </a>
@@ -131,7 +96,7 @@ function App() {
         </div>
       </nav>
 
-      <header className="hero reveal">
+      <header className="hero">
         <div className="hero-avatar">
           <div className="avatar-frame">
             <div className="avatar-core">SRR</div>
@@ -176,7 +141,7 @@ function App() {
       </header>
 
       <main>
-        <section className="section reveal" id="focus">
+        <section className="section" id="focus">
           <div className="section-heading">
             <p className="section-kicker">Core Engineering Focus</p>
           </div>
@@ -195,7 +160,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section reveal" id="projects">
+        <section className="section" id="projects">
           <div className="section-heading">
             <p className="section-kicker">Featured Research & Projects</p>
           </div>
@@ -214,7 +179,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section reveal" id="experience">
+        <section className="section" id="experience">
           <div className="section-heading">
             <p className="section-kicker">Experience</p>
           </div>
@@ -239,7 +204,7 @@ function App() {
           </div>
         </section>
 
-        <section className="bottom-grid reveal">
+        <section className="bottom-grid">
           <section className="section terminal-card" id="education">
             <div className="section-heading">
               <p className="section-kicker">Education</p>

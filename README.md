@@ -35,4 +35,4 @@ npm run build
 - `src/App.jsx`: page content and React component structure
 - `src/main.jsx`: React entrypoint
 - `styles.css`: global styling
-- `resume/Sai_Rajaji_Resume_Sys.pdf`: resume download asset
+- `public/resume/Sai_Rajaji_Resume_Sys.pdf`: resume download asset
