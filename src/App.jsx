@@ -85,7 +85,15 @@ const experience = [
 
 function App() {
   useEffect(() => {
+    document.body.classList.add("js-enabled");
+
     const revealItems = document.querySelectorAll(".reveal");
+
+    if (!("IntersectionObserver" in window)) {
+      revealItems.forEach((item) => item.classList.add("is-visible"));
+      return () => document.body.classList.remove("js-enabled");
+    }
+
     const revealObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -103,7 +111,10 @@ function App() {
       revealObserver.observe(item);
     });
 
-    return () => revealObserver.disconnect();
+    return () => {
+      revealObserver.disconnect();
+      document.body.classList.remove("js-enabled");
+    };
   }, []);
 
   return (
